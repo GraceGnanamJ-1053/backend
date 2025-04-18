@@ -76,11 +76,12 @@ app.delete('/deleteProduct/:id',async(req,res)=>{
         res.json(error)
     }
 })
-// // //Create API End Points (HTTP Request,Response)
-// app.get('/',(req,res)=>{
-// res.send('Welcome to Node JS Server')
-// })
-//config PORT and Start Server
+// //Create API End Points (HTTP Request,Response)
+app.get('/',(req,res)=>{
+res.send('Welcome to Node JS Server')
+})
+
+// config PORT and Start Server
 const PORT = 8000
 app.listen(PORT, ()=>{
 console.log(`Server running on port ${PORT}`)
